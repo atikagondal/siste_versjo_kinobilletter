@@ -98,14 +98,13 @@ function formaterBilletter(Billetter) {
         ut += "<tr>";
         ut += "<td>" + enbillett.film + "</td><td>" + enbillett.antall + "</td><td>" + enbillett.fornavn + "</td><td>" + enbillett.etternavn + "</td><td>" + enbillett.telefonnr + "</td><td>" + enbillett.epost + "</td>";
         ut += "<td><button class='bi bi-trash' type='button' onclick='slettBillett(" + enbillett.id + ")'>";
-         ut += "<td><button class='btn-oppdater' type='button' onclick='oppdaterBillett(" + enbillett.id + ")'>Oppdater</button></td>";
+        ut += "<td><button class='btn-oppdater' type='button' onclick='oppdaterBillett(" + enbillett.id + ")'>Oppdater</button></td>";
         ut += "</tr>";
     }
     // Oppdater HTML-elementet med ID-en "output" med den genererte tabellen
     $("#output").html(ut);
     TomUtAlleBilletter();
 }
-
 
 
 function slettBillett(id) {
